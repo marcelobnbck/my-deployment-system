@@ -9,6 +9,11 @@ pipeline {
   }
 
   stages {
+    stage('Checkout') {
+      steps {
+          git url: 'https://github.com/marcelobnbck/my-deployment-system.git', branch: 'main'
+            }
+    }
     stage('OpenTofu Validate & Apply') {
       steps {
         dir("${TOFU_DIR}") {
