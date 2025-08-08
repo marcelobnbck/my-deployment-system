@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     KUBE_NAMESPACE = "apps"
-    HELM_RELEASE   = "my-app"
+    HELM_RELEASE   = "my-deployment-system"
     HELM_CHART     = "helm-chart"
     TOFU_DIR       = "tofu"
   }
